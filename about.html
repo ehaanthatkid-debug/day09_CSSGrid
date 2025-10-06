@@ -1,0 +1,87 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Page</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .nav {
+      list-style-type: none;
+      background-color: #03658C;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    .nav li {
+      margin: 0 15px;
+    }
+
+    .nav a {
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+    }
+
+    .nav a:hover {
+      color: #F2C53D;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      padding: 40px;
+      background-color: #f9f9f9;
+    }
+
+    .grid-item {
+      background-color: white;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    footer {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background-color: #03658C;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+    }
+  </style>
+</head>
+<body>
+     <div class="grid-item main-img">
+      <img src="images/field.jpg">
+    </div>
+  <ul class="nav">
+    <li><a href="index.html">Home</a></li>
+    <li><a class="active" href="about.html">About</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+
+  <div class="grid-container">
+    <div class="grid-item">Section 1</div>
+    <div class="grid-item">Section 2</div>
+    <div class="grid-item">Section 3</div>
+    <div class="grid-item">Section 4</div>
+    <div class="grid-item">Section 5</div>
+    <div class="grid-item">Section 6</div>
+  </div>
+
+  
+</body>
+</html>
